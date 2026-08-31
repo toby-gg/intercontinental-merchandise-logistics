@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://toby-gg.github.io/intercontinental-merchandise-logistics
+Sitemap: https://toby-gg.github.io/intercontinental-merchandise-logistics/sitemap.xml
