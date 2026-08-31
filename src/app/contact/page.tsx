@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { ContactForm } from "@/components/ContactForm";
+import { PageHero } from "@/components/PageHero";
+import { site } from "@/lib/site";
+export const metadata:Metadata={title:"Contact & Request a Quote",description:`Contact ${site.shortName} for merchandise sourcing, haulage, delivery and logistics support.`,alternates:{canonical:"/contact"}};
+export default function ContactPage(){return <><PageHero eyebrow="Contact us" title="Tell us what needs to move." text="Share your sourcing or logistics requirement and our team will help define a practical next step."/><section className="section contact-section"><div className="container contact-grid"><div><p className="eyebrow"><span/>Request a quote</p><h2>Let’s understand your requirement.</h2><p>For the most useful response, include the goods or service needed, quantity, locations and preferred timeline.</p><div className="contact-method"><span>Call us</span><a href={`tel:${site.phone}`}>{site.phone}</a></div><div className="contact-method"><span>Email us</span><a href={`mailto:${site.email}`}>{site.email}</a></div><div className="contact-method"><span>Office</span><strong>{site.address}</strong></div></div><ContactForm/></div></section></>}
